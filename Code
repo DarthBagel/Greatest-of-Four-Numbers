@@ -1,8 +1,7 @@
-#include<iostream>
-using namespace std;
+#include<stdio.h>
 int max_of_four(int a,int b,int c,int d)
 {
-    int e{};
+    int e=0;
     if(a>b)
       e=a;
     else
@@ -16,7 +15,7 @@ int max_of_four(int a,int b,int c,int d)
 
 
 int main() {
-    cout<<"Enter the numbers you want to compare :";
+    printf("Enter the numbers you want to compare :");
     int a, b, c, d;
     scanf("%d %d %d %d", &a, &b, &c, &d);
     int ans = max_of_four(a, b, c, d);
